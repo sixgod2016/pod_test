@@ -1,6 +1,7 @@
 use_frameworks!
 target 'pod_test_Tests' do
-  pod 'pod_test', :path => '../'
+#  pod 'pod_test', :path => '../'
+pod 'pod_test', :path => '../pod_test.podspec'
   
   
 end

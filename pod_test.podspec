@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'pod_test'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of pod_test.'
+  s.version          = '0.1.1'
+  s.summary          = '私有库demo.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '为HiPos提供打印方法'
 
   s.homepage         = 'https://github.com/sixgod2016/pod_test'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,15 +26,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/sixgod2016/pod_test.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'pod_test/Classes/**/*'
+  
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'pod_test' => ['pod_test/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit', 'CoreBluetooth'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
